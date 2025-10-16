@@ -58,7 +58,7 @@ export default function Home() {
         
         <div className="p-4 bg-gray-800 rounded-lg h-96 overflow-y-auto">
           {messages.length === 0 ? (
-            <p className="text-gray-400">AIからのメッセージがここに表示されます。</p>
+            <p className="text-gray-400">あなたの部署での困りごとを教えてください。</p>
           ) : (
             messages.map((msg, index) => (
               <div key={index} className={`mb-4 ${msg.sender === 'user' ? 'text-right' : 'text-left'}`}>
